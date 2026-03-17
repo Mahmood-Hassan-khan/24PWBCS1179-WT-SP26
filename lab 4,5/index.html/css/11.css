@@ -1,0 +1,15 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap:10px;
+}
+
+.big {
+  grid-column: span 2;
+}
+
+@media (max-width:768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

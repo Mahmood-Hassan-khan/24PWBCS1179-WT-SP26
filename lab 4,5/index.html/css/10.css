@@ -1,0 +1,11 @@
+.screen::after {
+  content: "Mobile";
+}
+
+@media (min-width:768px) {
+  .screen::after { content: "Tablet"; }
+}
+
+@media (min-width:1024px) {
+  .screen::after { content: "Desktop"; }
+}

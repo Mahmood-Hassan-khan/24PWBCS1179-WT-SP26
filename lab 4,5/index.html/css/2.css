@@ -1,0 +1,24 @@
+.sidebar {
+  float: left;
+  width: 30%;
+  background: orange;
+}
+
+.content {
+  float: left;
+  width: 70%;
+  background: lightgreen;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@media (max-width: 768px) {
+  .sidebar, .content {
+    float: none;
+    width: 100%;
+  }
+}

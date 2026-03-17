@@ -1,0 +1,24 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: black;
+  color: white;
+}
+
+.modal {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  background: red;
+}
+
+.sidebar {
+  position: sticky;
+  top: 50px;
+  background: blue;
+}
+
+@media (max-width: 768px) {
+  header { position: static; }
+}

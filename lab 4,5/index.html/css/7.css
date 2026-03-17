@@ -1,0 +1,27 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+}
+
+.left, .right {
+  width: 20%;
+  background: lightgray;
+}
+
+.content {
+  width: 60%;
+  background: lightblue;
+}
+
+@media (max-width:768px) {
+  .main {
+    flex-direction: column;
+  }
+  .left, .right, .content {
+    width: 100%;
+  }
+}
